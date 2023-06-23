@@ -4,6 +4,6 @@ orbs:
 workflows:
   build:
     jobs:
-      - cypress/run:
+      - cypress-io/run:
           start-command: 'npm run start'
           cypress-command: 'npx cypress run --browser chrome --spec "cypress/e2e/weatherAPI.cy.js"'
