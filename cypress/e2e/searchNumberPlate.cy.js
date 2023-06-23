@@ -19,9 +19,7 @@ describe('UI Automation - Service NSW Search Informations', () => {
     cy.get('h1[id="page-title"]').should('be.visible');
     cy.url().should('include', '/service-centre');
 
-    // =========================================================================
-    // Got each data from data driven in fixtures/searchNSW.json and do testing
-    // =========================================================================
+    // Get each data from data driven in json file
     cy.fixture('searchNSW').then((data) => {
       data.forEach((key) => {
         // Search NSW Location
