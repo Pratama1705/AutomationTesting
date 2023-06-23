@@ -41,5 +41,8 @@ The API Key for **API_KEY_BASE** and **API_KEY_FREETRIAL** is different based on
 but it required premium/pro token that need real money to use. So, alternative option to do this is to use **`/forecast/hourly?postal_code={postal_code}`** endpoint to get
 some weather data. The reason for choosing this alternative API is the response has similarity with second cases that able to get **`timestamp_utc`** and **`weather`**
 
-## BONUS POINTS
+## BONUS POINTS - CASE NUMBER 1 (PERFORMANCE TESTING)
+After do some step before, you able to do performance API Testing based on case criteria and the file can be found at **`cypress\e2e\performanceTesting.cy.js`**. You should open cypress UI and run this script file to see average of response time in each request. The base criteria is to pass the request when response time is less than 1500ms (1.5s) and the status code is 200. Or you can able to run in headless mode too by type this command in terminal/CMD **`npx cypress run --spec cypress\e2e\performanceTesting.cy.js`**
+
+## BONUS POINTS - CASE NUMBER 2 (UI HEADLESS MODE)
 Answer for bonus points on **number 2** is, after you able to run cypress based on step before, you able to run cypress on headless mode. You should write and type command **`npx cypress run --browser chrome --spec cypress\e2e\searchNumberPlate.cy.js`** in terminal/CMD and then hit enter. Cypress script test cases will be run in terminal and return result of testing.
