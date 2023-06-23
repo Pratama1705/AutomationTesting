@@ -5,7 +5,7 @@ describe('API Testing - Weather Bit', () => {
   const API_KEY_BASE = Cypress.env('API_KEY_BASE');
   const API_KEY_FREETRIAL = Cypress.env('API_KEY_FREETRIAL');
 
-  it.skip('GET Current Lattitude & Longitude', () => {
+  it('GET Current Lattitude & Longitude', () => {
     const lat = '40.73061';
     const lon = '-73.935242';
 
@@ -23,7 +23,7 @@ describe('API Testing - Weather Bit', () => {
     });
   });
 
-  it.skip('GET Forecast Daily', () => {
+  it('GET Forecast Daily', () => {
     const postal_code = 28546;
     const datetime = [];
     const weather_icon = [];

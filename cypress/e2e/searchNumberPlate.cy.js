@@ -9,7 +9,7 @@ describe('UI Automation - Service NSW Search Informations', () => {
 
   it('Search Some Informations Number Plate', () => {
     // Search for informations topics & hit enter
-    cy.get('div[id="homeautosuggestZdgtctUHaWs"] > input[placeholder="Search"]').type('apply for a number plate{enter}').should('have.value', 'apply for a number plate');
+    cy.get('input[placeholder="Search"]').eq(2).type('apply for a number plate{enter}').should('have.value', 'apply for a number plate');
     cy.wait(3000);
     cy.get('h2').contains('apply for a number plate').should('be.visible'); // Ensure open right page
 
