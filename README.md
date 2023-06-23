@@ -40,3 +40,6 @@ workflows:
 The API Key for **API_KEY_BASE** and **API_KEY_FREETRIAL** is different based on endpoint that will to use. At second case, we will hit endpoint **`/forecast/3hourly?postal_code={postal_code}`**
 but it required premium/pro token that need real money to use. So, alternative option to do this is to use **`/forecast/hourly?postal_code={postal_code}`** endpoint to get
 some weather data. The reason for choosing this alternative API is the response has similarity with second cases that able to get **`timestamp_utc`** and **`weather`**
+
+## BONUS POINTS
+Answer for bonus points on **number 2** is, after you able to run cypress based on step before, you able to run cypress on headless mode. You should write and type command **`npx cypress run --browser chrome --spec cypress\e2e\searchNumberPlate.cy.js`** in terminal/CMD and then hit enter. Cypress script test cases will be run in terminal and return result of testing.
